@@ -88,27 +88,46 @@ position: relative;
     transform: translate(-5%, 70%);
     /* position: absolute; */
   }
+  .img-mob2{
+    display: none;
+  }
 
   @media (min-width: 375px) and (max-width: 756px){
     .container {
-        max-width: 320px;
-        margin: 100px auto;
-        display: grid;
+        max-width: 340px;
+        margin: 150px auto;
+        display: block;
         grid-template-columns: 1fr;
         gap: 0;
         
-        
+        position: relative;
+    }
+    p{
+        font-size: 13px;
     }
     .FAQ{
-        margin-top: -20px;
+       
+        margin-top: 30px;
+    }
+    .text{
+        font-size: 16px;
     }
 
-    
-      .img-mob{
-        transform: translate(-5%, 10%)
+    .img-mob{
+        display: none;
+        width: 100%;
+        transform: translate(20%, -15%)
         
       }
-      .image {
+    .image {
         background-image: none;
+      }
+    .img-mob2{
+        width: 60%;
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        /* box-shadow: 20px 20px 10px #f1f1f1; */
       }
   }
